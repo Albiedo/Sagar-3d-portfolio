@@ -213,8 +213,8 @@ function WorkDetail({
   )
 }
 
-export default function Works({ lang, innerRef }: { lang: 'en' | 'zh'; innerRef: Ref<HTMLElement> }) {
-const data = WORKS[lang === 'kn' ? 'en' : lang]
+export default function Works({ lang, innerRef }: { lang: 'en' | 'kn'; innerRef: Ref<HTMLElement> }) {
+  const data = WORKS[lang === 'kn' ? 'en' : lang]
   const sections = data.sections
   const count = sections.length
 
