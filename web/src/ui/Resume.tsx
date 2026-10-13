@@ -39,54 +39,58 @@ interface ResumeEntry {
   points?: string[]
   groups?: ResumeGroup[]
 }
-const RESUME: Record<'en' | 'zh', { title: string; entries: ResumeEntry[] }> = {
+const RESUME: Record<'en' | 'kn' | 'zh', { title: string; entries: ResumeEntry[] }> = {
   en: {
     title: 'Résumé',
     entries: [
       {
-        period: '2013 – 2017',
-        place: 'Sun Yat-sen University',
-        role: 'B.S. in Software Engineering',
-      },
-      {
-        period: '2017 – 2020',
-        place: 'HOTSAR Studio · Shanghai',
-        role: 'Co-founder',
-        logo: { src: `${import.meta.env.BASE_URL}images/hotsar.jpg`, alt: 'HOTSAR' },
+        period: 'Current',
+        place: 'Independent',
+        role: 'Social Media Content Strategist & Project Manager',
         points: [
-          'Co-founder · team of 20+',
-          'Clients: Alibaba brands, Tencent, NetEase, DiDi, China Resources, McDonald’s…',
-          'Work: development / creative direction / animation / team management',
+          'Plan and coordinate social media content from idea development to production.',
+          'Develop content strategies and storytelling approaches for digital audiences.',
+          'Coordinate creative workflows involving scriptwriters and video editors.',
+          'Work across regional storytelling, technology explainers, and business content.',
         ],
       },
       {
-        period: '2020 – 2025',
-        place: 'Bad Printer Studio · Shenzhen',
-        role: 'Founder',
-        logo: { src: `${import.meta.env.BASE_URL}images/bp.png`, alt: 'Bad Printer Studio' },
+        period: '3+ Years',
+        place: 'Freelance',
+        role: 'Scriptwriter',
         points: [
-          'Founder · team of 14',
-          'Clients: Honor of Kings / Trip.com / ByteDance / Kuaishou / VIVO / Tecno / Xiaomi / IM Motors…',
-          'Work: team management / creative direction / animation / development',
+          'Write short-form scripts for social media and digital video.',
+          'Adapt stories for regional audiences with attention to language, culture, and context.',
+          'Develop hooks, narrative flow, and calls to action for audience engagement.',
+          'Work across technology, consumer products, and business storytelling.',
+        ],
+      },
+    ],
+  },
+  kn: {
+    title: 'ನನ್ನ ಅನುಭವ',
+    entries: [
+      {
+        period: 'ಪ್ರಸ್ತುತ',
+        place: 'ಸ್ವತಂತ್ರವಾಗಿ',
+        role: 'ಸೋಷಿಯಲ್ ಮೀಡಿಯಾ ಕಂಟೆಂಟ್ ಸ್ಟ್ರಾಟೆಜಿಸ್ಟ್ ಮತ್ತು ಪ್ರಾಜೆಕ್ಟ್ ಮ್ಯಾನೇಜರ್',
+        points: [
+          'ಐಡಿಯಾ ರೂಪಿಸುವುದರಿಂದ ಕಂಟೆಂಟ್ ನಿರ್ಮಾಣದವರೆಗೆ ಸೋಷಿಯಲ್ ಮೀಡಿಯಾ ಕೆಲಸಗಳನ್ನು ಯೋಜಿಸಿ ಸಂಯೋಜಿಸುವುದು.',
+          'ಡಿಜಿಟಲ್ ಪ್ರೇಕ್ಷಕರಿಗಾಗಿ ಕಂಟೆಂಟ್ ತಂತ್ರಗಳು ಮತ್ತು ಕಥೆ ಹೇಳುವ ವಿಧಾನಗಳನ್ನು ರೂಪಿಸುವುದು.',
+          'ಸ್ಕ್ರಿಪ್ಟ್ ರೈಟರ್‌ಗಳು ಮತ್ತು ವೀಡಿಯೊ ಎಡಿಟರ್‌ಗಳ ಕೆಲಸದ ಪ್ರಕ್ರಿಯೆಗಳನ್ನು ಸಂಯೋಜಿಸುವುದು.',
+          'ಪ್ರಾದೇಶಿಕ ಕಥನ, ತಂತ್ರಜ್ಞಾನ ವಿವರಣೆಗಳು ಮತ್ತು ಉದ್ಯಮ ಸಂಬಂಧಿತ ಕಂಟೆಂಟ್‌ಗಳಲ್ಲಿ ಕೆಲಸ ಮಾಡುವುದು.',
         ],
       },
       {
-        period: '2025 – Now',
-        place: 'Content Creator',
-        groups: [
-          {
-            heading: '小郑还挺忙',
-            logoImg: `${import.meta.env.BASE_URL}images/buzyzheng.png`,
-            sub: 'tech-DIY creator',
-            items: ['120K on Douyin · 87K on Bilibili · 23K on Xiaohongshu'],
-            links: SOCIAL_LINKS,
-          },
+        period: '3+ ವರ್ಷಗಳು',
+        place: 'ಫ್ರೀಲಾನ್ಸ್',
+        role: 'ಸ್ಕ್ರಿಪ್ಟ್ ರೈಟರ್',
+        points: [
+          'ಸೋಷಿಯಲ್ ಮೀಡಿಯಾ ಮತ್ತು ಡಿಜಿಟಲ್ ವೀಡಿಯೊಗಳಿಗಾಗಿ ಕಿರು ಸ್ಕ್ರಿಪ್ಟ್‌ಗಳನ್ನು ಬರೆಯುವುದು.',
+          'ಭಾಷೆ, ಸಂಸ್ಕೃತಿ ಮತ್ತು ಸ್ಥಳೀಯ ಸಂದರ್ಭಗಳಿಗೆ ತಕ್ಕಂತೆ ಕಥೆಗಳನ್ನು ರೂಪಿಸುವುದು.',
+          'ಪ್ರೇಕ್ಷಕರನ್ನು ಸೆಳೆಯಲು ಆಕರ್ಷಕ ಆರಂಭ, ಕಥೆಯ ಹರಿವು ಮತ್ತು ಕಾಲ್ ಟು ಆಕ್ಷನ್ ರೂಪಿಸುವುದು.',
+          'ತಂತ್ರಜ್ಞಾನ, ಗ್ರಾಹಕ ಉತ್ಪನ್ನಗಳು ಮತ್ತು ಉದ್ಯಮ ಕಥನಗಳಿಗಾಗಿ ಸ್ಕ್ರಿಪ್ಟ್‌ಗಳನ್ನು ಬರೆಯುವುದು.',
         ],
-      },
-      {
-        period: '2026 – Now',
-        place: 'Indie Developer',
-        groups: [{ logo: 'zooop', sub: 'AI creation platform', link: 'https://zooop.ai/' }],
       },
     ],
   },
@@ -263,8 +267,8 @@ function Entry({ entry, index }: { entry: ResumeEntry; index: number }) {
   )
 }
 
-export default function Resume({ lang }: { lang: 'en' | 'zh' }) {
-  const data = RESUME[lang]
+export default function Resume({ lang }: { lang: 'en' | 'kn' | 'zh' }) {
+const data = RESUME[lang]
   return (
     <section className="resume" lang={lang}>
       <motion.h2
